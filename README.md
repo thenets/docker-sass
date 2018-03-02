@@ -1,11 +1,11 @@
-ubuntudesign/sass
+thenets/sass
 ===
 
 A Docker image for building sass files.
 
-- [Github repository](https://github.com/ubuntudesign/docker-sass)
-- [Dockerfile](https://github.com/ubuntudesign/docker-sass/blob/master/Dockerfile)
-- [Built image](https://registry.hub.docker.com/u/ubuntudesign/sass/)
+- [Github repository](https://github.com/thenets/docker-sass)
+- [Dockerfile](https://github.com/thenets/docker-sass/blob/master/Dockerfile)
+- [Built image](https://registry.hub.docker.com/u/thenets/sass/)
 
 Building
 ---
