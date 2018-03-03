@@ -1,26 +1,19 @@
 thenets/sass
 ===
 
-A Docker image for building sass files.
+A Docker image for building SASS files.
 
 - [Github repository](https://github.com/thenets/docker-sass)
 - [Dockerfile](https://github.com/thenets/docker-sass/blob/master/Dockerfile)
 - [Built image](https://registry.hub.docker.com/u/thenets/sass/)
 
-Building
----
-
-To recreate it from scratch:
-
-``` bash
-docker build -t ubuntudesign/sass --no-cache .
-```
-
 Usage
 ---
 
 ``` bash
-docker run -v /my/app/dir:/app ubuntudesign/sass sass --watch /app/scss
-```
+# Go to the diretory with my assets files
+cd assets
 
-(Unfortunately `watch` only seems to work for watching directories - not files)
+# Run the container and mount the current dir
+docker run -v $(pwd):/sass thenets/sass --watch ./sass/style.sass ./sass/style.css
+```
